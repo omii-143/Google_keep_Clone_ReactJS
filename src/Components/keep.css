@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --abril: 'Abril Fatface', cursive;
+    --poppins: 'Poppins', sans-serif;
+    --orange-color: #FBBC05;
+    --yellow-color: #FFF475;
+    --teal-color: #A7FFEB;
+}
+
+.main_div {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4c7;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 15%);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+form.active {
+    overflow: visible;
+    height: 20rem;
+}
+
+input {
+    width: 100%;
+    height: 0;
+    font-size: 2.3rem;
+    background-color: #ffffff59;
+    border: none;
+    padding: 0;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+input.active {
+    padding: 6px 18px;
+    height: 6rem;
+}
+
+.textArea {
+    width: 100%;
+    height: 6rem;
+    font-size: 1.3rem;
+    border: none;
+    padding: 18px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.452);
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.textArea.active {
+    background-color: #ffffff59;
+    padding: 6px 18px;
+    height: 10rem;
+    margin-top: 5px;
+}
+
+.submitBtn {
+    display: none!important;
+    position: absolute!important;
+    width: 6rem!important;
+    height: 6rem!important;
+    bottom: 50%;
+    right: 5%;
+    border-radius: 50%!important;
+    background-color: var(--orange-color)!important;
+    font-size: 4rem!important;
+    color: white!important;
+    transition: 0.3s!important;
+}
+
+.submitBtn.active {
+    display: inline-flex!important;
+    bottom: -15%;
+}
+
+.submitBtn:hover {
+    background-color: #dbdbdb!important;
+    color: black;
+}
+
+.note {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 7px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 4px 5px 13px rgb(0 0 0 / 20%);
+    display: inline-flex;
+    padding: 9px 0px 0px 9px;
+    position: relative;
+    flex-direction: column;
+}
+
+.note h1 {
+    font-size: 1.7rem;
+}
+
+.note p {
+    overflow: auto;
+    font-size: 1rem;
+}
+
+.deleteBtn {
+    height: 4rem;
+    width: 4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    box-shadow: 3px 3px 4px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.Btn {
+    font-size: 3rem!important;
+    color: var(--orange-color);
+}
+
+.deleteBtn:hover .Btn {
+    color: black;
+}
+
+.deleteBtn:hover {
+    background-color: var(--yellow-color);
+}
+
+.Time {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    font-size: 0.8rem!important;
+    font-weight: 500;
+}
