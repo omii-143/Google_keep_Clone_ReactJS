@@ -76,7 +76,7 @@ const AddNote = (props) => {
       ti: "",
     });
   };
-
+  
   return (
     <>
       <div className="main_div">
@@ -98,10 +98,7 @@ const AddNote = (props) => {
             placeholder="Write A Note...."
             onChange={inputNote}
           />
-          <Button onClick={submit} className="submitBtn ">
-            {" "}
-            +{" "}
-          </Button>
+          <Button onClick={submit} className="submitBtn ">+</Button>
         </form>
       </div>
     </>

@@ -15,7 +15,7 @@
 }
 
 form {
-    width: 50rem;
+    width: 30%;
     height: 6rem;
     display: flex;
     justify-content: center;
@@ -27,6 +27,12 @@ form {
     box-shadow: 4px 4px 10px rgb(0 0 0 / 15%);
     transition: 0.3s;
     overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+    form {
+        width: 70%;
+    }
 }
 
 form.active {
@@ -75,7 +81,7 @@ input.active {
 .submitBtn {
     display: none!important;
     position: absolute!important;
-    width: 6rem!important;
+    min-width: 6rem!important;
     height: 6rem!important;
     bottom: 50%;
     right: 5%;
